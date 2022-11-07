@@ -6,22 +6,22 @@ Analyse des besoins en données du site Web du restaurant Leila
 
 Entité 'Catégorie'
 ------------------
-* id : nombre entier, obligatoire, identifiant unique, généré automatiquement
+* id : nombre entier (minuscule), obligatoire, identifiant unique, généré automatiquement
 * nom : chaîne de caractères, max 50 caractères, obligatoire
 * type : énumération (valeurs possibles : 'plat' ou 'vin')
 
 Entité 'Plat'
 -------------
-* id : nombre entier, obligatoire, identifiant unique, généré automatiquement
+* id : nombre entier (petit), obligatoire, identifiant unique, généré automatiquement
 * nom : chaîne de caractères, max 200 caractères, obligatoire
 * description : chaîne de caractères, max 500 caractères, optionnel
-* portion : nombre entier, petit nombre, obligatoire, valeur par défaut = 1 
+* portion : nombre entier (minuscule), obligatoire, valeur par défaut = 1 
 * prix : nombre décimal, max 999.99, obligatoire 
 * catégorie : nombre entier, obligatoire, référence à un identifiant d'une catégorie
 
 Entité 'Vin'
 ------------
-* id : nombre entier, obligatoire, identifiant unique, généré automatiquement
+* id : nombre entier (petit), obligatoire, identifiant unique, généré automatiquement
 * nom : chaîne de caractères, max 200 caractères, obligatoire
 * description : chaîne de caractères, max 500 caractères, optionnel
 * provenance : chaîne de caractères, max 50 caractères, obligatoire
