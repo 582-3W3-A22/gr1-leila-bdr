@@ -1,14 +1,13 @@
+DROP DATABASE IF EXISTS leila;
+CREATE DATABASE leila;
+USE leila;
+
 -- ---
 -- Globals
 -- ---
 
 -- SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- SET FOREIGN_KEY_CHECKS=0;
-
-
-CREATE DATABASE leila;
-USE leila;
-
 
 -- ---
 -- Table 'categorie'
@@ -21,7 +20,8 @@ CREATE TABLE `categorie` (
   `id` TINYINT NOT NULL AUTO_INCREMENT,
   `nom` VARCHAR(50) NOT NULL,
   `type` ENUM('plat','vin') NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY (`nom`, `type`)
 );
 
 -- ---

@@ -9,6 +9,7 @@ Entité 'Catégorie'
 * id : nombre entier (minuscule), obligatoire, identifiant unique, généré automatiquement
 * nom : chaîne de caractères, max 50 caractères, obligatoire
 * type : énumération (valeurs possibles : 'plat' ou 'vin')
+Remarque : la combinaison des champs nom & type doit être unique
 
 Entité 'Plat'
 -------------
