@@ -1,7 +1,7 @@
 -- Données de la table "categorie"
 -- -------------------------------
 INSERT INTO categorie VALUES (0, 'Entrées', 'plat');
-INSERT INTO categorie VALUES (0, 'Poisson', 'plat');
+INSERT INTO categorie VALUES (0, 'Poissons', 'plat');
 INSERT INTO categorie VALUES (0, 'Viandes', 'plat');
 INSERT INTO categorie VALUES (0, 'Fromages', 'plat');
 INSERT INTO categorie VALUES (0, 'Desserts', 'plat');
