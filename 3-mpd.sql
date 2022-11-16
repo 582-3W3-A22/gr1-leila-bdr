@@ -1,7 +1,9 @@
 DROP DATABASE IF EXISTS leila;
 CREATE DATABASE leila;
 USE leila;
-
+-- ----------------------------------------------------
+-- NE PAS SUPPRIMER LES LIGNES CI-DESSUS
+-- ----------------------------------------------------
 -- ---
 -- Globals
 -- ---
@@ -38,7 +40,8 @@ CREATE TABLE `plat` (
   `portion` TINYINT NOT NULL DEFAULT 1,
   `prix` DECIMAL(5,2) NOT NULL,
   `categorie_id` TINYINT NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY (`nom`, `categorie_id`)
 );
 
 -- ---
@@ -55,7 +58,8 @@ CREATE TABLE `vin` (
   `provenance` VARCHAR(25) NOT NULL,
   `prix` DECIMAL(6,2) NULL DEFAULT NULL,
   `categorie_id` TINYINT NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY (`nom`, `description`, `categorie_id`)
 );
 
 -- ---
